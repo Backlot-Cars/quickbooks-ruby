@@ -20,6 +20,7 @@ module Quickbooks
       xml_accessor :id, :from => 'Id'
       xml_accessor :sync_token, :from => 'SyncToken', :as => Integer
       xml_accessor :meta_data, :from => 'MetaData', :as => MetaData
+      xml_accessor :custom_fields, :from => 'CustomField', :as => [CustomField]
       xml_accessor :title, :from => 'Title'
       xml_accessor :given_name, :from => 'GivenName'
       xml_accessor :middle_name, :from => 'MiddleName'
